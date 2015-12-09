@@ -70,6 +70,17 @@
 #   endif
 #endif
 
-/* TODO */
+/******************************************************************************/
+/*  sframes library                                                           */
+/******************************************************************************/
+
+typedef struct sfsock *sfsock;
+
+SFRAMES_EXPORT sfsock sfattach(tcpsock s);
+SFRAMES_EXPORT void sfsend(sfsock s, const void *buf, size_t len,
+    int64_t deadline);
+SFRAMES_EXPORT size_t sfrecv(sfsock s, void *buf, size_t len,
+    int64_t deadline);
+SFRAMES_EXPORT void sfclose(sfsock s);
 
 #endif
