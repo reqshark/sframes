@@ -28,7 +28,7 @@ AC_PREREQ([2.53])
 
 AC_INIT([sframes], [m4_esyscmd([./package_version.sh])],
    [libmill@freelists.org], [sframes], [http://libmill.org/])
-AC_CONFIG_SRCDIR([sframes.pc.in])
+AC_CONFIG_SRCDIR([libsframes.pc.in])
 AM_INIT_AUTOMAKE([1.6 foreign subdir-objects tar-ustar])
 m4_ifdef([AM_SILENT_RULES], [AM_SILENT_RULES([yes])])
 
@@ -90,6 +90,6 @@ LT_INIT
 
 AC_CONFIG_MACRO_DIR([m4])
 
-AC_OUTPUT([Makefile sframes.pc])
+AC_OUTPUT([Makefile libsframes.pc])
 cp confdefs.h config.h
 
