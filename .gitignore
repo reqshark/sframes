@@ -22,4 +22,6 @@ ltmain.sh
 m4/*.m4
 missing
 test-driver
-
+tests/.dirstamp
+tests/e2e
+tests/*.o

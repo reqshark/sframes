@@ -48,7 +48,8 @@ libsframes_la_CFLAGS = \
 #  automated tests                                                             #
 ################################################################################
 
-check_PROGRAMS = 
+check_PROGRAMS = \
+    tests/e2e
 
 LDADD = libsframes.la
 
